@@ -2686,8 +2686,8 @@ fieldset:disabled a.btn {
 
 .btn-outline-light:hover {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
 }
 
 .btn-outline-light:focus, .btn-outline-light.focus {
@@ -9813,4 +9813,30 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+/* =============================== MY STYLES ================================== */
+.tool-tip {
+  position: relative;
+}
+
+.tool-tip .tool-tip-text {
+  visibility: hidden;
+  width: 80px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 110%;
+  left: 50%;
+  margin-left: -40px;
+  font-size: small;
+}
+
+.tool-tip:hover .tool-tip-text {
+  visibility: visible;
 }
